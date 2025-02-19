@@ -3,13 +3,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{{ title }}</title>
+
     <link rel="stylesheet" href="/src/styles/main.css">
+    <link
+            rel="stylesheet"
+            href="node_modules/keen-slider/keen-slider.min.css"
+    />
 </head>
-    <body>
-        <h1>{{ title }}</h1>
-        {% include '../components/nav.njk' %}
-        <img src="/src/assets/logo.png" width="400" style="margin-top: 1.5rem">
+    <body class="text-main bg-bg">
+        {% include '../components/header.njk' %}
+
         {% block content %}
         {% endblock %}
+
+        {% include '../components/footer.njk' %}
+
+        <script type="module" src="/src/assets/js/main.ts" defer></script>
     </body>
 </html>

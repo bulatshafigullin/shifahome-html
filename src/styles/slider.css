@@ -1,0 +1,48 @@
+#main-slider-section .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 10px;
+}
+
+#main-slider-section .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #A7A7A7;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+#main-slider-section .dot--active {
+    width: 10px;
+    height: 10px;
+    background: #6B6862;
+}
+
+.product-slider-section .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5AB77F;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.product-slider-section .arrow--left {
+    left: -60px;
+    background-image: url("/src/assets/imgs/icons/caret-left.svg");
+}
+
+.product-slider-section .arrow--right {
+    right: -60px;
+    background-image: url("/src/assets/imgs/icons/caret-right.svg");
+}
