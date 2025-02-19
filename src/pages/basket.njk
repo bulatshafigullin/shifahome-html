@@ -1,0 +1,63 @@
+{% extends 'layouts/main.njk' %}
+
+{% block content %}
+
+<div class="container">
+    {% include '../src/components/breadcrumbs.njk' %}
+
+    <h1 class="uppercase text-3xl mb-[51px] -mt-4">Моя корзина</h1>
+
+    <div class="flex mb-[145px] justify-between">
+        <div class="w-[792px] divide-y divide-border border-y border-border">
+            {% include '../src/components/basket-product.njk' %}
+            {% include '../src/components/basket-product.njk' %}
+            {% include '../src/components/basket-product.njk' %}
+        </div>
+
+        <div class="w-[353px]">
+            <p class="uppercase mb-5 text-[22px] leading-[26px]">ваш заказ</p>
+            <p class="text-sm font-bold mb-4">У вас есть промокод или сертификат?</p>
+
+            <div class="rounded-2xl mb-[29px] gap-4 bg-white h-[68px] flex items-center border border-border pt-3 pb-2.5 px-[15px]">
+                <div class="flex-1">
+                    <p class="text-xs tracking-normal mb-1">Введите код</p>
+
+                    <input type="text" placeholder="370-422-442" class="placeholder:text-secondary w-full" />
+                </div>
+
+                <button class="flex-center rounded-full bg-accent size-[38px]">
+                    <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.813 9h12.374M9 2.813v12.374" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+
+            <table class="text-sm border-separate border-spacing-x-[3px] w-[calc(100%+6px)] -mx-[3px] mb-[30px]">
+                <tr>
+                    <td class="pt-[11px] pb-[3px] border-border border-b">Товары</td>
+                    <td class="pt-[11px] pb-[3px] border-border border-b">4 490 ₽</td>
+                </tr>
+                <tr>
+                    <td class="pt-[11px] pb-[3px] border-border border-b">Скидки</td>
+                    <td class="pt-[11px] pb-[3px] border-border border-b text-sale">1 000 ₽</td>
+                </tr>
+                <tr>
+                    <td class="pt-[11px] pb-[3px] border-border border-b">Доставка</td>
+                    <td class="pt-[11px] pb-[3px] border-border border-b">Бесплатно</td>
+                </tr>
+                <tr>
+                    <td class="pt-2 text-lg font-bold uppercase">Итого </td>
+                    <td class="pt-2 text-lg font-bold">3 490 ₽</td>
+                </tr>
+            </table>
+
+            <button class="h-[54px] w-full justify-between flex items-center bg-accent rounded-full pr-[18px] pl-7 text-white uppercase text-sm">
+                <span>оформить заказ</span>
+
+                <img src="/src/assets/imgs/icons/arrow-right.svg" alt="" />
+            </button>
+        </div>
+    </div>
+
+    {% include '../src/components/products-slider.njk' %}
+</div>
+
+{% endblock %}
