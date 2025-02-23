@@ -18,7 +18,7 @@
 #main-slider-section .dot--active {
     width: 10px;
     height: 10px;
-    background: #6B6862;
+    @apply bg-main;
 }
 
 .product-slider-section .arrow {

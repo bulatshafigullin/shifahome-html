@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .button {
+        padding: 18px 18px 18px 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        border-radius: 99px;
+
+        svg, img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

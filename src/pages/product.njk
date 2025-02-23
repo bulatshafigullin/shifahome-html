@@ -5,14 +5,14 @@
 <div class="container">
     {% include '../src/components/breadcrumbs.njk' %}
 
-    <section class="flex flex-wrap justify-between">
-        <div class="w-[430px] h-[670px] bg-white rounded-[60px] overflow-hidden"></div>
+    <section class="grid grid-cols-1 m576:grid-cols-2 m1024:grid-cols-[1fr_1fr_314px] gap-5 m1024:gap-[56px] justify-between">
+        <div class="m576:h-auto max-m576:aspect-square w-full m1280:h-[670px] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden"></div>
 
-        <div class="w-[430px] h-[670px] bg-white rounded-[60px] overflow-hidden flex-center">
+        <div class="m576:h-auto max-m576:aspect-square w-full m1280:h-[670px] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden flex-center">
             <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-[80%]" />
         </div>
 
-        <div class="w-[314px]">
+        <div class="m576:max-m1024:col-span-2">
             <span class="bg-accent text-white lowercase text-xs rounded-full px-1.5">новинка</span>
 
             <h1 class="mt-5 mb-2.5 font-bold text-[22px] leading-[26px] uppercase">
@@ -52,40 +52,42 @@
                 </table>
             </div>
 
-            <div class="flex flex-wrap gap-2.5 mb-5">
-                <div class="flex items-center h-[54px] w-[116px] px-[11px] gap-1 rounded-full bg-white">
-                    <button class="rounded-full size-7 bg-bg flex-center">
-                        <img src="/src/assets/imgs/icons/minus.svg" alt="" />
-                    </button>
+            <div class="flex max-m768:flex-col m1024:flex-col gap-2.5">
+                <div class="flex flex-wrap gap-2.5 mb-5">
+                    <div class="flex items-center h-[54px] w-[116px] px-[11px] gap-1 rounded-full bg-white">
+                        <button class="rounded-full size-7 bg-bg flex-center">
+                            <img src="/src/assets/imgs/icons/minus.svg" alt="" />
+                        </button>
 
-                    <input type="text" value="1" class="text-center w-7">
+                        <input type="text" value="1" class="text-center w-7">
 
-                    <button class="rounded-full size-7 bg-bg flex-center">
-                        <img src="/src/assets/imgs/icons/plus.svg" alt="" />
+                        <button class="rounded-full size-7 bg-bg flex-center">
+                            <img src="/src/assets/imgs/icons/plus.svg" alt="" />
+                        </button>
+                    </div>
+
+                    <button class="button bg-accent text-white w-[188px]">
+                        <span>в корзину</span>
+
+                        <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.684 5.813H3.316a.562.562 0 0 0-.559.5l-1 9a.562.562 0 0 0 .56.624h13.367a.562.562 0 0 0 .56-.624l-1-9a.562.562 0 0 0-.56-.5Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.188 8.813v-4.5a2.813 2.813 0 0 1 5.625 0v4.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
                 </div>
 
-                <button class="h-[54px] w-[188px] justify-between flex items-center bg-accent rounded-full pr-[18px] pl-7 text-white uppercase text-sm">
-                    <span>в корзину</span>
+                <div class="flex flex-wrap gap-2.5">
+                    <a href="#">
+                        <img src="/src/assets/imgs/wb.svg" alt="" />
+                    </a>
 
-                    <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.684 5.813H3.316a.562.562 0 0 0-.559.5l-1 9a.562.562 0 0 0 .56.624h13.367a.562.562 0 0 0 .56-.624l-1-9a.562.562 0 0 0-.56-.5Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.188 8.813v-4.5a2.813 2.813 0 0 1 5.625 0v4.5" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-            </div>
-
-            <div class="flex flex-wrap gap-2.5">
-                <a href="#">
-                    <img src="/src/assets/imgs/wb.svg" alt="" />
-                </a>
-
-                <a href="#">
-                    <img src="/src/assets/imgs/ozon.svg" alt="" />
-                </a>
+                    <a href="#">
+                        <img src="/src/assets/imgs/ozon.svg" alt="" />
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="flex flex-wrap justify-between mb-20 mt-[100px]">
-        <div class="w-[430px]">
+    <section class="grid grid-cols-1 m768:grid-cols-2 m1024:grid-cols-[1fr_1fr_314px] max-m768:gap-10 gap-5 m1024:gap-[56px] justify-between mb-20 mt-[100px]">
+        <div>
             <h4 class="font-bold uppercase text-lg">Характеристики</h4>
 
             <table class="text-sm border-separate border-spacing-x-2.5 w-[calc(100%+20px)] -mx-2.5">
@@ -116,7 +118,7 @@
             </table>
         </div>
 
-        <div class="w-[430px]">
+        <div class="m768:max-m1024:col-span-2 m768:max-m1024:row-start-2">
             <h4 class="font-bold uppercase text-lg mb-[18px]">ОПИСАНИЕ</h4>
 
             <article>
@@ -134,7 +136,7 @@
             </article>
         </div>
 
-        <div class="w-[314px]">
+        <div>
             <h4 class="font-bold uppercase text-lg mb-4">Доставка</h4>
 
             <p class="text-sm leading-4 mb-1">

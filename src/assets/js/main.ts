@@ -190,9 +190,17 @@ new KeenSlider(
     "#main-slider",
     {
         slides: {
-            perView: 2,
-            spacing: 10,
+            perView: 1,
+            spacing: 0,
         },
+        breakpoints: {
+            '(min-width: 768px)': {
+                slides: {
+                    perView: 2,
+                    spacing: 10
+                }
+            }
+        }
     },
     [mainSliderNavigation]
 );
@@ -201,8 +209,40 @@ new KeenSlider(
     ".products-slider",
     {
         slides: {
-            perView: 5,
-            spacing: 54,
+            perView: 1,
+            spacing: 16,
+        },
+        breakpoints: {
+            '(min-width: 420px)': {
+                slides: {
+                    perView: 2,
+                    spacing: 16,
+                },
+            },
+            '(min-width: 664px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 16,
+                },
+            },
+            '(min-width: 900px)': {
+                slides: {
+                    perView: 4,
+                    spacing: 16,
+                },
+            },
+            '(min-width: 1200px)': {
+                slides: {
+                    perView: 5,
+                    spacing: 16,
+                },
+            },
+            '(min-width: 1280px)': {
+                slides: {
+                    perView: 5,
+                    spacing: 54,
+                },
+            },
         },
     },
     [productsSliderNavigation]
