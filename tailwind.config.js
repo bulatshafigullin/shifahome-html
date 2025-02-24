@@ -13,6 +13,7 @@ export default {
             m768: '768px',
             m992: '992px',
             m1024: '1024px',
+            m1200: '1200px',
             m1280: '1280px',
         },
         fontFamily: {
@@ -31,9 +32,6 @@ export default {
     },
     corePlugins: {
         container: false,
-    },
-    future: {
-        hoverOnlyWhenSupported: true,
     },
     plugins: [
         ({ addUtilities, theme, addVariant }) => {

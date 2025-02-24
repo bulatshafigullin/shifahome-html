@@ -1,61 +1,24 @@
 <header class="bg-white">
-    <div class="py-9 flex items-center justify-between relative container">
-        <a href="/" class="-translate-x-1/2 left-1/2 absolute bottom-9">
-            <img src="/src/assets/imgs/icons/logo-dark.svg" />
+    <div class="py-4 m1200:py-9 flex items-center justify-between relative container">
+        <a href="/" class="-translate-x-1/2 left-1/2 absolute max-m475:hidden w-[190px] m1200:w-[310px]">
+            <img src="/src/assets/imgs/icons/logo-dark.svg" class="w-full" />
         </a>
 
         <div class="flex items-center gap-5 text-xs">
-            <div class="relative z-10">
-                <button id="headerCatalogButton" class="headerCatalogButton">
-                    <img src="/src/assets/imgs/icons/burger.svg" alt="Меню" />
-                    <img src="/src/assets/imgs/icons/cross.svg" alt="Меню" />
+            {% include './header-catalog-button.njk' %}
 
-                    КАТАЛОГ
-                </button>
+            <a href="#" class="font-bold uppercase max-m992:hidden">Акции</a>
 
-                <div id="menu" class="absolute left-0 mt-1 bg-white rounded-[20px] hidden shadow-[4px_4px_44px_0_#6B686217] py-4 w-[230px]">
-                    <ul>
-                        <li class="group cursor-pointer px-[5px]">
-                            <span class="font-bold uppercase text-xs flex items-center gap-2.5 py-[11px] pl-3 pr-[14px] hover:bg-main rounded-[10px] hover:text-white">
-                                <svg width="14" height="14" class="stroke-accent group-hover:stroke-white" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.198 11.62 9 7.817c.449-.45.449-1.184 0-1.634L5.198 2.38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/></svg>
-                                УХОД ЗА ЛИЦОМ
-                            </span>
-                        </li>
-                        <li class="group cursor-pointer px-[5px]">
-                            <span class="font-bold uppercase text-xs flex items-center gap-2.5 py-[11px] pl-3 pr-[14px] group-hover:bg-main rounded-[10px] group-hover:text-white">
-                                <svg width="14" height="14" class="stroke-accent group-hover:stroke-white " fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.198 11.62 9 7.817c.449-.45.449-1.184 0-1.634L5.198 2.38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/></svg>
-                                УХОД ЗА ВОЛОСАМИ
-                            </span>
-
-                            <div class="w-[186px] absolute left-full top-0 hidden group-hover:block">
-                                <ul class="w-[182px] bg-white rounded-[20px] py-[15px] px-[5px] translate-x-1">
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Шампуни</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Бальзамы</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Маски</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Сыворотки</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Кондиционеры</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Масло</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Лосьоны</li>
-                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Флюиды</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="#" class="font-bold uppercase">Акции</a>
-
-            <button class="flex items-center gap-1.5 text-secondary tracking-normal">
+            <button class="max-m992:hidden flex items-center gap-1.5 text-secondary tracking-normal">
                 <img src="/src/assets/imgs/icons/city-select.svg" alt="Город Казань" />
                 Город Казань
             </button>
         </div>
 
         <div class="flex items-center">
-            <a class="mr-7 font-bold tracking-normal" href="tel:88002560720">8 800 2560-720</a>
+            <a class="mr-7 font-bold tracking-normal max-m1024:hidden" href="tel:88002560720">8 800 2560-720</a>
 
-            <div class="flex gap-5">
+            <div class="flex gap-2.5 m576:gap-5">
                 <a href="#">
                     <img src="/src/assets/imgs/icons/loop.svg" alt="Поиск" class="size-[30px]" />
                 </a>
@@ -64,24 +27,25 @@
                     <img src="/src/assets/imgs/icons/heart-thin.svg" alt="Поиск" class="size-[30px]" />
                 </a>
 
-                <a href="#">
+                <a href="/basket">
                     <img src="/src/assets/imgs/icons/bag.svg" alt="Поиск" class="size-[30px]" />
                 </a>
             </div>
         </div>
     </div>
 
-    <nav class="flex container justify-between uppercase text-sm text-main pb-4">
-        <a href="#" class="text-sale">Распродажа</a>
-        <a href="#">Для лица</a>
-        <a href="#">Для волос</a>
-        <a href="#">Для тела</a>
-        <a href="#">О бренде</a>
-        <a href="#">Оптовые поставки</a>
-        <a href="#">контрактное производство</a>
-        <a href="#">Доставка и оплата</a>
-        <a href="#">Статьи</a>
-        <a href="#">Контаткы</a>
-    </nav>
-
+    <div class="container max-m1200:!px-0 pb-4 overflow-hidden">
+        <nav class="flex justify-between uppercase text-sm text-main max-m1200:gap-4 overflow-y-hidden max-m1200:px-[15px] pb-6 -mb-6 max-m1200:overflow-x-auto whitespace-nowrap">
+            <a href="#" class="text-sale">Распродажа</a>
+            <a href="#">Для лица</a>
+            <a href="#">Для волос</a>
+            <a href="#">Для тела</a>
+            <a href="#">О бренде</a>
+            <a href="#">Оптовые поставки</a>
+            <a href="#">контрактное производство</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Статьи</a>
+            <a href="#">Контаткы</a>
+        </nav>
+    </div>
 </header>
