@@ -5,10 +5,44 @@
         </a>
 
         <div class="flex items-center gap-5 text-xs">
-            <button class="rounded-full border border-accent flex items-center py-2 pl-3 pr-6 gap-5 font-bold uppercase">
-                <img src="/src/assets/imgs/icons/burger.svg" alt="Меню" />
-                Каталог
-            </button>
+            <div class="relative z-10">
+                <button id="headerCatalogButton" class="headerCatalogButton">
+                    <img src="/src/assets/imgs/icons/burger.svg" alt="Меню" />
+                    <img src="/src/assets/imgs/icons/cross.svg" alt="Меню" />
+
+                    КАТАЛОГ
+                </button>
+
+                <div id="menu" class="absolute left-0 mt-1 bg-white rounded-[20px] hidden shadow-[4px_4px_44px_0_#6B686217] py-4 w-[230px]">
+                    <ul>
+                        <li class="group cursor-pointer px-[5px]">
+                            <span class="font-bold uppercase text-xs flex items-center gap-2.5 py-[11px] pl-3 pr-[14px] hover:bg-main rounded-[10px] hover:text-white">
+                                <svg width="14" height="14" class="stroke-accent group-hover:stroke-white" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.198 11.62 9 7.817c.449-.45.449-1.184 0-1.634L5.198 2.38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/></svg>
+                                УХОД ЗА ЛИЦОМ
+                            </span>
+                        </li>
+                        <li class="group cursor-pointer px-[5px]">
+                            <span class="font-bold uppercase text-xs flex items-center gap-2.5 py-[11px] pl-3 pr-[14px] group-hover:bg-main rounded-[10px] group-hover:text-white">
+                                <svg width="14" height="14" class="stroke-accent group-hover:stroke-white " fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.198 11.62 9 7.817c.449-.45.449-1.184 0-1.634L5.198 2.38" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/></svg>
+                                УХОД ЗА ВОЛОСАМИ
+                            </span>
+
+                            <div class="w-[186px] absolute left-full top-0 hidden group-hover:block">
+                                <ul class="w-[182px] bg-white rounded-[20px] py-[15px] px-[5px] translate-x-1">
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Шампуни</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Бальзамы</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Маски</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Сыворотки</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Кондиционеры</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Масло</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Лосьоны</li>
+                                    <li class="px-4 py-[5px] hover:bg-bg rounded-[10px] text-sm">Флюиды</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
             <a href="#" class="font-bold uppercase">Акции</a>
 

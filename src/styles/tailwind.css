@@ -18,4 +18,24 @@
             height: 18px;
         }
     }
+
+    .headerCatalogButton {
+        @apply rounded-full border border-accent flex items-center py-2 pl-3 pr-6 gap-5 font-bold uppercase;
+    }
+
+    .headerCatalogButton img:nth-child(2) {
+        display: none;
+    }
+
+    .headerCatalogButton._active {
+        @apply bg-accent text-white;
+    }
+
+    .headerCatalogButton._active img:nth-child(1) {
+        display: none;
+    }
+
+    .headerCatalogButton._active img:nth-child(2) {
+        display: block;
+    }
 }

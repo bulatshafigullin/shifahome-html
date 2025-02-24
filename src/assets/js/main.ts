@@ -247,3 +247,18 @@ new KeenSlider(
     },
     [productsSliderNavigation]
 );
+
+const headerCatalogButton = document.getElementById('headerCatalogButton')
+const headerCatalogMenu = document.getElementById('menu')
+
+headerCatalogButton.addEventListener('click', function() {
+    headerCatalogButton.classList.toggle('_active')
+    headerCatalogMenu.classList.toggle('hidden');
+});
+
+document.addEventListener('click', function(e) {
+    if (!headerCatalogMenu.contains(e.target as Node) && !headerCatalogButton.contains(e.target as Node)) {
+        headerCatalogButton.classList.remove('_active')
+        headerCatalogMenu.classList.add('hidden');
+    }
+});
