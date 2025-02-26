@@ -12,6 +12,7 @@ function mainSliderNavigation(slider) {
     function removeElement(elment: HTMLElement) {
         elment.parentNode.removeChild(elment);
     }
+
     function createDiv(className: string) {
         let div = document.createElement("div");
         let classNames = className.split(" ");
@@ -105,6 +106,7 @@ function productsSliderNavigation(slider) {
     function removeElement(elment: HTMLElement) {
         elment.parentNode.removeChild(elment);
     }
+
     function createDiv(className: string) {
         let div = document.createElement("div");
         let classNames = className.split(" ");
@@ -186,79 +188,107 @@ function productsSliderNavigation(slider) {
     });
 }
 
-new KeenSlider(
-    "#main-slider",
-    {
-        slides: {
-            perView: 1,
-            spacing: 0,
-        },
-        breakpoints: {
-            '(min-width: 768px)': {
-                slides: {
-                    perView: 2,
-                    spacing: 10
+if (document.getElementById('main-slider')) {
+    new KeenSlider(
+        "#main-slider",
+        {
+            slides: {
+                perView: 1,
+                spacing: 0,
+            },
+            breakpoints: {
+                '(min-width: 768px)': {
+                    slides: {
+                        perView: 2,
+                        spacing: 10
+                    }
                 }
             }
-        }
-    },
-    [mainSliderNavigation]
-);
+        },
+        [mainSliderNavigation]
+    );
+}
 
-new KeenSlider(
-    ".products-slider",
-    {
-        slides: {
-            perView: 1,
-            spacing: 16,
+if (document.querySelectorAll('.products-slider').length) {
+    new KeenSlider(
+        ".products-slider",
+        {
+            slides: {
+                perView: 1,
+                spacing: 16,
+            },
+            breakpoints: {
+                '(min-width: 420px)': {
+                    slides: {
+                        perView: 2,
+                        spacing: 16,
+                    },
+                },
+                '(min-width: 664px)': {
+                    slides: {
+                        perView: 3,
+                        spacing: 16,
+                    },
+                },
+                '(min-width: 900px)': {
+                    slides: {
+                        perView: 4,
+                        spacing: 16,
+                    },
+                },
+                '(min-width: 1200px)': {
+                    slides: {
+                        perView: 5,
+                        spacing: 16,
+                    },
+                },
+                '(min-width: 1280px)': {
+                    slides: {
+                        perView: 5,
+                        spacing: 54,
+                    },
+                },
+            },
         },
-        breakpoints: {
-            '(min-width: 420px)': {
-                slides: {
-                    perView: 2,
-                    spacing: 16,
-                },
-            },
-            '(min-width: 664px)': {
-                slides: {
-                    perView: 3,
-                    spacing: 16,
-                },
-            },
-            '(min-width: 900px)': {
-                slides: {
-                    perView: 4,
-                    spacing: 16,
-                },
-            },
-            '(min-width: 1200px)': {
-                slides: {
-                    perView: 5,
-                    spacing: 16,
-                },
-            },
-            '(min-width: 1280px)': {
-                slides: {
-                    perView: 5,
-                    spacing: 54,
-                },
-            },
-        },
-    },
-    [productsSliderNavigation]
-);
+        [productsSliderNavigation]
+    );
+}
 
 const headerCatalogButton = document.getElementById('headerCatalogButton')
 const headerCatalogMenu = document.getElementById('menu')
 
-headerCatalogButton.addEventListener('click', function() {
+headerCatalogButton.addEventListener('click', function () {
     headerCatalogButton.classList.toggle('_active')
     headerCatalogMenu.classList.toggle('hidden');
 });
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     if (!headerCatalogMenu.contains(e.target as Node) && !headerCatalogButton.contains(e.target as Node)) {
         headerCatalogButton.classList.remove('_active')
         headerCatalogMenu.classList.add('hidden');
     }
 });
+
+document.querySelectorAll('.prod-count button').forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        const input: Element = e.currentTarget.parentNode.querySelector('input')
+
+        const {type} = e.currentTarget.dataset
+
+        let newValue = Number(input.getAttribute('value'))
+
+        if (type === 'plus') {
+            newValue += 1
+        } else {
+            newValue -= 1
+
+            if (newValue <= 1) {
+                newValue = 1
+            }
+        }
+
+        input.setAttribute('value', String(newValue))
+    })
+})
