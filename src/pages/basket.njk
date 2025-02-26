@@ -5,20 +5,20 @@
 <div class="container">
     {% include '../src/components/breadcrumbs.njk' %}
 
-    <h1 class="uppercase text-3xl mb-[51px] -mt-4">Моя корзина</h1>
+    <h1 class="uppercase text-3xl m576:mb-[51px] mb-9 -mt-4">Моя корзина</h1>
 
-    <div class="flex mb-[145px] justify-between">
-        <div class="w-[792px] divide-y divide-border border-y border-border">
+    <div class="flex mb-24 m992:mb-[145px] max-m992:flex-col justify-between gap-4 gap-y-20">
+        <div class="w-full m992:w-[792px] divide-y divide-border border-y border-border">
             {% include '../src/components/basket-product.njk' %}
             {% include '../src/components/basket-product.njk' %}
             {% include '../src/components/basket-product.njk' %}
         </div>
 
-        <div class="w-[353px]">
+        <div class="w-full m992:w-[353px]">
             <p class="uppercase mb-5 text-[22px] leading-[26px]">ваш заказ</p>
             <p class="text-sm font-bold mb-4">У вас есть промокод или сертификат?</p>
 
-            <div class="rounded-2xl mb-[29px] gap-4 bg-white h-[68px] flex items-center border border-border pt-3 pb-2.5 px-[15px]">
+            <div class="rounded-2xl mb-5 m992:mb-[29px] gap-4 bg-white h-[68px] flex items-center border border-border pt-3 pb-2.5 px-[15px]">
                 <div class="flex-1">
                     <p class="text-xs tracking-normal mb-1">Введите код</p>
 
@@ -49,7 +49,7 @@
                 </tr>
             </table>
 
-            <button class="button bg-accent text-white w-[188px] w-full">
+            <button class="button bg-accent text-white w-full">
                 <span>оформить заказ</span>
 
                 <img src="/src/assets/imgs/icons/arrow-right.svg" alt="" />
