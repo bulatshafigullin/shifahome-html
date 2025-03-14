@@ -1,3 +1,4 @@
+@import "../../node_modules/keen-slider/keen-slider.min.css";
 #main-slider-section .dots {
     display: flex;
     justify-content: center;
