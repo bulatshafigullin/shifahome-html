@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "/opt/homebrew/Cellar/rsync/3.3.0/bin/rsync --chown=dv:www-data  -arv dist root@212.109.196.58:/var/www/shifahome-html/"
   },
   "devDependencies": {
     "@vituum/vite-plugin-nunjucks": "1.1.0",
