@@ -1,0 +1,43 @@
+.article img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 800 / 380;
+    border-radius: 60px;
+}
+
+.article > *:nth-child(1) {
+    margin-top: 0;
+}
+
+.article img {
+    margin-top: 54px;
+    margin-bottom: 62px;
+}
+
+.article hr {
+    margin-top: 39px;
+    margin-bottom: 45px;
+}
+
+.article h4 {
+    margin-bottom: 22px;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article ul,
+.article ol {
+    padding-left: 28px;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.article ul li {
+    list-style-type: disc;
+}
+
+.article ul li:not(:first-child) {
+    margin-top: 15px;
+}

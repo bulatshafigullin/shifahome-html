@@ -1,0 +1,111 @@
+{% extends 'layouts/main.njk' %}
+
+{% block content %}
+
+<div class="container">
+    {% include '../src/components/breadcrumbs.njk' %}
+
+    <h1 class="uppercase font-bold text-3xl mb-[9px] -mt-4">Безотходный уход: собираем zero waste косметичку</h1>
+    <p class="text-xs leading-[1.2] text-secondary">28 ноября</p>
+
+    <section class="mt-20 mb-[200px] flex flex-wrap gap-x-[146px]">
+        <div class="relative before:-z-10 before:absolute before:-inset-[60px] before:rounded-[120px] before:bg-white flex-1">
+            <article class="article">
+                <img src="/src/assets/imgs/news/2.png" alt="" />
+                <p>
+                    Фраза про красоту, которая требует жертв в наше время приобретает новый оттенок: сегодня жертвы в
+                    основном приносит природа.
+                    Судите сами: арсенал косметики среднестатистической девушки включает бесчисленное количество баночек,
+                    масок, патчей. Мы с упоением покупаем новые средства, армия флакончиков и тюбиков растет, а вот кто
+                    действительно страдает, так это экология. Ведь в основном все упаковано в пластик, который ежедневно, в
+                    огромном количестве отправляется на мусорные полигоны.
+                    Сегодня перед всеми людьми, которым не чужда забота об экологии, ребром встаёт вопрос: что лично я могу
+                    делать для того, чтобы моя забота о себе не губила природу?
+                </p>
+
+                <hr />
+
+                <h4>10 шагов к eco-friendly уходу</h4>
+                <p>
+                    Мы решили поделиться с вами подборкой средств и лайфхаков, которые помогут вам на пути к косметическому zero waste! Шампунь, бальзам для волос или средство для очищения можно покупать не в пластиковых бутылочках, а в брусочках, упакованных в картон.
+                    <br/><br/>
+                    Во-первых, такие продукты расходуются более экономно, во-вторых — у них нет лишней упаковки. А еще их удобно брать с собой в поездки.
+                    <br/><br/>
+                    Greenpeace посчитал, что в среднем человек расходует около 200 пластиковых палочек в год. Только в России выбрасывается около 16 тонн пластика от палочек, ежегодно! Альтернатива — бамбуковые ватные палочки, а среди других аксессуаров — деревянные расчески, бамбуковые зубные щетки, которые могут стать вашей повседневной реальностью. Эти предметы гигиены мы меняем часто, а значит, скорость их разложения должна стать решающим фактором в выборе.
+                </p>
+
+                <img src="/src/assets/imgs/news/3.png" alt="" />
+                <h4>И еще несколько советов</h4>
+                <ul>
+                    <li>
+                        овладейте искусством маленьких шагов и не пытайтесь свести количество отходов к нулю в одночасье! Не нужно сразу выбрасывать весь пластик из ванной и клятвенно обещать себе, что это — в последний раз. Пусть для начала это будет большая упаковка шампуня вместо маленькой, это уже ваша маленькая победа;
+                    </li>
+                    <li>
+                        пересмотрите содержимое своей косметички и полок в ванной. Отдайте друзьям и близким то, чем не пользуетесь. Некоторые начатые средства (особенно класса люкс) можно даже продать на Авито;
+                    </li>
+                    <li>
+                        перед совершением очередной beauty-покупки задумайтесь, во что упакован и так ли вам нужен еще один блеск для губ;
+                    </li>
+                    <li>
+                        придумайте новое применение баночкам и флаконам из-под закончившихся средств, используйте их в быту;
+                    </li>
+                    <li>
+                        читайте составы и выбирайте натуральные средства без микропластика, продуктов нефтепереработки, силиконов, которые загрязняют мировой океан;
+                    </li>
+                    <li>
+                        старайтесь использовать все средства до конца.
+                    </li>
+                </ul>
+            </article>
+
+            <div class="mt-11 flex flex-wrap gap-2.5">
+                <a href="" class="flex-center size-12 rounded-full bg-bg">
+                    <img src="/src/assets/imgs/icons/social-dark/wa.svg" alt="" />
+                </a>
+                <a href="" class="flex-center size-12 rounded-full bg-bg">
+                    <img src="/src/assets/imgs/icons/social-dark/tg.svg" alt="" />
+                </a>
+                <a href="" class="flex-center size-12 rounded-full bg-bg">
+                    <img src="/src/assets/imgs/icons/social-dark/vk.svg" alt="" />
+                </a>
+                <a href="" class="flex-center size-12 rounded-full bg-bg">
+                    <img src="/src/assets/imgs/icons/social-dark/in.svg" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w-[340px] flex flex-col gap-[100px]">
+            {% include '../src/components/news-card.njk' %}
+            {% include '../src/components/news-card.njk' %}
+            {% include '../src/components/news-card.njk' %}
+            {% include '../src/components/news-card.njk' %}
+            {% include '../src/components/news-card.njk' %}
+            {% include '../src/components/news-card.njk' %}
+        </div>
+    </section>
+
+    {% include '../src/components/products-slider.njk' %}
+
+    <section class="mt-[140px] flex gap-2.5">
+        <img src="/src/assets/imgs/contract-production.webp" class="w-1/2 rounded-[80px] aspect-[638/460]" alt="Контрактное производство">
+
+        <div class="text-white aspect-[638/460] bg-main flex-center rounded-[80px] flex-col p-4">
+            <span class="uppercase py-1.5 rounded-full px-4 text-sm bg-accent">Новинки</span>
+
+            <h4 class="mt-[42px] text-center uppercase mb-4 m1024:mb-[29px] text-3xl m1024:text-[40px] leading-[1.2]">
+                Познакомьтесь
+                с новинками 2025
+            </h4>
+
+            <p class="mb-4 m1024:mb-11 text-center">Возможно, здесь вы найдёте ваш будущий бестселлер</p>
+
+            <button class="button border-accent border w-[254px]">
+                <span>смотреть новинки</span>
+
+                <img src="/src/assets/imgs/icons/arrow-right.svg" alt="" />
+            </button>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
