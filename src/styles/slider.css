@@ -47,3 +47,8 @@
     right: -60px;
     background-image: url("/src/assets/imgs/icons/caret-right.svg");
 }
+
+.docs-slider-section .arrow {
+    top: auto;
+    bottom: 116px;
+}
