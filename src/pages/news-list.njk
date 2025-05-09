@@ -7,7 +7,7 @@
 
     <h1 class="uppercase text-3xl m576:mb-[51px] mb-10 -mt-4">полезные статьи</h1>
 
-    <div class="flex flex-wrap gap-2 mb-[50px] text-main">
+    <div class="flex flex-wrap gap-2 mb-6 m1024:mb-[50px] text-main">
         <button class="border border-main bg-main text-white rounded-full py-3 px-5 uppercase text-sm leading-[1.2]">Здоровье</button>
         <button class="border border-border rounded-full py-3 px-5 uppercase text-sm leading-[1.2]">Красота</button>
         <button class="border border-border rounded-full py-3 px-5 uppercase text-sm leading-[1.2]">Питание</button>
@@ -15,7 +15,7 @@
     </div>
 
     <section class="mb-[120px]">
-        <div class="grid grid-cols-3 gap-x-[43px] gap-y-[50px] mb-[50px]">
+        <div class="grid grid-cols-1 m768:grid-cols-2 m992:grid-cols-3 gap-6 m1280:gap-x-[43px] m1280:gap-y-[50px] mb-[50px]">
             {% include '../src/components/news-card.njk' %}
             {% include '../src/components/news-card.njk' %}
             {% include '../src/components/news-card.njk' %}
@@ -26,21 +26,23 @@
 
         <button class="button w-full border border-accent justify-center mb-[34px]">загрузить больше</button>
 
-        <div class="flex-center flex-wrap gap-2.5">
-            <button>
+        <div class="flex-center gap-2.5">
+            <button class="size-[38px] flex-center flex-[0_0_38px]">
                 <img src="/src/assets/imgs/icons/pagination/arrow-left.svg" alt="" />
             </button>
 
-            <button class="size-[38px] flex-center bg-main hover:bg-main hover:text-white rounded-full text-xs leading-none text-white">1</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">2</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">3</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">4</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">5</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">6</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">7</button>
-            <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">8</button>
+            <div class="flex-center flex-wrap gap-2.5">
+                <button class="size-[38px] flex-center bg-main hover:bg-main hover:text-white rounded-full text-xs leading-none text-white">1</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">2</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">3</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">4</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">5</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">6</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">7</button>
+                <button class="size-[38px] flex-center bg-white hover:bg-main hover:text-white rounded-full text-xs leading-none">8</button>
+            </div>
 
-            <button>
+            <button class="size-[38px] flex-center flex-[0_0_38px]">
                 <img src="/src/assets/imgs/icons/pagination/arrow-right.svg" alt="" />
             </button>
         </div>
