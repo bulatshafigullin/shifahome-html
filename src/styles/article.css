@@ -9,18 +9,22 @@
     margin-top: 0;
 }
 
+.article p {
+    @apply text-base m768:text-[22px] m768:leading-[1.4];
+}
+
 .article img {
     margin-top: 54px;
-    margin-bottom: 62px;
+    @apply mb-6 m768:mb-[62px];
 }
 
 .article hr {
     margin-top: 39px;
-    margin-bottom: 45px;
+    @apply mb-6 m768:mb-[45px];
 }
 
 .article h4 {
-    margin-bottom: 22px;
+    @apply mb-6 m768:mb-[22px];
     font-size: 20px;
     line-height: 120%;
     font-weight: 700;
@@ -29,9 +33,9 @@
 
 .article ul,
 .article ol {
+    @apply text-base m768:text-xl leading-[1.4];
+
     padding-left: 28px;
-    font-size: 20px;
-    line-height: 140%;
 }
 
 .article ul li {

@@ -8,8 +8,8 @@
     <h1 class="uppercase font-bold text-3xl mb-[9px] -mt-4">Безотходный уход: собираем zero waste косметичку</h1>
     <p class="text-xs leading-[1.2] text-secondary">28 ноября</p>
 
-    <section class="mt-20 mb-[200px] flex flex-wrap gap-x-[146px]">
-        <div class="relative before:-z-10 before:absolute before:-inset-[60px] before:rounded-[120px] before:bg-white flex-1">
+    <section class="mt-20 mb-20 m1280:mb-[200px] flex flex-wrap gap-x-[80px] m1280:gap-x-[146px]">
+        <div class="relative before:-z-10 before:absolute before:-inset-6 m1280:before:-inset-[60px] before:rounded-[0_80px_80px_0] m1280:before:rounded-[120px] before:bg-white flex-1">
             <article class="article">
                 <img src="/src/assets/imgs/news/2.png" alt="" />
                 <p>
@@ -74,7 +74,7 @@
             </div>
         </div>
 
-        <div class="w-[340px] flex flex-col gap-[100px]">
+        <div class="max-m1024:mt-[70px] w-full m1024:w-[270px] m1280:w-[340px] grid grid-cols-1 m576:grid-cols-2 m1024:grid-cols-1 m1024:flex flex-col gap-4 m1024:gap-10 m1280:gap-[100px]">
             {% include '../src/components/news-card.njk' %}
             {% include '../src/components/news-card.njk' %}
             {% include '../src/components/news-card.njk' %}
@@ -86,10 +86,10 @@
 
     {% include '../src/components/products-slider.njk' %}
 
-    <section class="mt-[140px] flex gap-2.5">
-        <img src="/src/assets/imgs/contract-production.webp" class="w-1/2 rounded-[80px] aspect-[638/460]" alt="Контрактное производство">
+    <section class="mt-20 m1280:mt-[140px] flex gap-2.5">
+        <img src="/src/assets/imgs/contract-production.webp" class="max-m992:hidden w-1/2 rounded-[32px] m1200:rounded-[80px] aspect-[638/460] object-cover" alt="Контрактное производство">
 
-        <div class="text-white aspect-[638/460] bg-main flex-center rounded-[80px] flex-col p-4">
+        <div class="text-white m992:aspect-[638/460] flex-1 bg-main flex-center rounded-[32px] m1200:rounded-[80px] flex-col p-4">
             <span class="uppercase py-1.5 rounded-full px-4 text-sm bg-accent">Новинки</span>
 
             <h4 class="mt-[42px] text-center uppercase mb-4 m1024:mb-[29px] text-3xl m1024:text-[40px] leading-[1.2]">
