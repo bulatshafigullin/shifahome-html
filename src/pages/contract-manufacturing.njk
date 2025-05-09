@@ -1,0 +1,42 @@
+{% extends 'layouts/main.njk' %}
+
+{% block content %}
+
+<div class="container">
+    {% include '../src/components/breadcrumbs.njk' %}
+
+    <section class="flex gap-2.5">
+        <img src="/src/assets/imgs/contract-production.webp" class="w-1/2 rounded-[80px] aspect-[638/460]" alt="Контрактное производство">
+
+        <div class="text-white aspect-[638/460] bg-main flex-center rounded-[80px] flex-col p-4">
+            <div class="flex-center flex-wrap gap-1.5 text-sm uppercase leading-[1.2]">
+                <div class="flex items-center gap-3 py-2 pl-2 pr-4 bg-white/10 rounded-full">
+                    <img src="/src/assets/imgs/icons/tick-circle.svg" alt="" class="size-4" />
+                    <span>Брендинг</span>
+                </div>
+                <div class="flex items-center gap-3 py-2 pl-2 pr-4 bg-white/10 rounded-full">
+                    <img src="/src/assets/imgs/icons/tick-circle.svg" alt="" class="size-4" />
+                    <span>упаковка</span>
+                </div>
+                <div class="flex items-center gap-3 py-2 pl-2 pr-4 bg-white/10 rounded-full">
+                    <img src="/src/assets/imgs/icons/tick-circle.svg" alt="" class="size-4" />
+                    <span>доставка</span>
+                </div>
+            </div>
+
+            <h4 class="mt-[42px] text-center uppercase mb-4 m1024:mb-[29px] text-3xl m1024:text-[40px] leading-[1.2]">
+                Выгодное Контрактное производство
+            </h4>
+
+            <p class="mb-4 m1024:mb-11 text-center">Готовы произвести продукцию под ваш бренд и требования </p>
+
+            <button class="button border-accent border w-[204px]">
+                <span>Подробнее</span>
+
+                <img src="/src/assets/imgs/icons/arrow-right.svg" alt="" />
+            </button>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
