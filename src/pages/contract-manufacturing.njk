@@ -6,9 +6,9 @@
     {% include '../src/components/breadcrumbs.njk' %}
 
     <section class="flex gap-2.5">
-        <img src="/src/assets/imgs/contract-production.webp" class="w-1/2 rounded-[80px] aspect-[638/460]" alt="Контрактное производство">
+        <img src="/src/assets/imgs/contract-production.webp" class="max-m992:hidden w-1/2 rounded-[32px] m1200:rounded-[80px] aspect-[638/460] object-cover" alt="Контрактное производство">
 
-        <div class="text-white aspect-[638/460] bg-main flex-center rounded-[80px] flex-col p-4">
+        <div class="text-white m992:aspect-[638/460] flex-1 bg-main flex-center rounded-[32px] m1200:rounded-[80px] flex-col p-4">
             <div class="flex-center flex-wrap gap-1.5 text-sm uppercase leading-[1.2]">
                 <div class="flex items-center gap-3 py-2 pl-2 pr-4 bg-white/10 rounded-full">
                     <img src="/src/assets/imgs/icons/tick-circle.svg" alt="" class="size-4" />
@@ -38,12 +38,12 @@
         </div>
     </section>
 
-    <section class="my-[140px]">
+    <section class="my-20 m1200:my-[140px]">
         <h4 class="text-2xl m768:text-3xl uppercase mb-[40px]">Полный цикл производства </h4>
 
-        <div class="grid grid-cols-4 gap-2 5">
-            <div class="relative py-[35px] px-[40px] rounded-[60px] bg-white">
-                <h4 class="text-lg mb-[78px] leading-[1.4] uppercase font-bold">
+        <div class="grid m640:grid-cols-2 m1200:grid-cols-4 gap-2 5">
+            <div class="relative p-4 m640:py-[35px] m640:px-10 rounded-[30px] m640:rounded-[60px] bg-white">
+                <h4 class="text-lg mb-6 m1200:mb-[78px] leading-[1.4] uppercase font-bold">
                     Брендинг<br/>
                     продукции<br/>
                     и упаковка
@@ -59,8 +59,8 @@
                 <img src="/src/assets/imgs/manufacture-full-cycle/1.svg" alt="" class="absolute inset-y-0 right-0 w-[100px]" />
             </div>
 
-            <div class="relative py-[35px] px-[40px] rounded-[60px] bg-accent text-white">
-                <h4 class="text-lg mb-[78px] leading-[1.4] uppercase font-bold">
+            <div class="relative p-4 m640:py-[35px] m640:px-10 rounded-[30px] m640:rounded-[60px] bg-accent text-white">
+                <h4 class="text-lg mb-6 m1200:mb-[78px] leading-[1.4] uppercase font-bold">
                     гибкие<br/>
                     условия<br/>
                     оплаты
@@ -73,8 +73,8 @@
                 <img src="/src/assets/imgs/manufacture-full-cycle/2.svg" alt="" class="absolute inset-y-0 right-0 w-[100px]" />
             </div>
 
-            <div class="relative py-[35px] px-[40px] rounded-[60px] bg-white">
-                <h4 class="text-lg mb-[78px] leading-[1.4] uppercase font-bold">
+            <div class="relative p-4 m640:py-[35px] m640:px-10 rounded-[30px] m640:rounded-[60px] bg-white">
+                <h4 class="text-lg mb-6 m1200:mb-[78px] leading-[1.4] uppercase font-bold">
                     Доставка<br/>
                     по всей<br/>
                     России
@@ -90,8 +90,8 @@
                 <img src="/src/assets/imgs/manufacture-full-cycle/3.svg" alt="" class="absolute inset-y-0 right-0 w-[100px]" />
             </div>
 
-            <div class="relative py-[35px] px-[40px] rounded-[60px] bg-white">
-                <h4 class="text-lg mb-[78px] leading-[1.4] uppercase font-bold">
+            <div class="relative p-4 m640:py-[35px] m640:px-10 rounded-[30px] m640:rounded-[60px] bg-white">
+                <h4 class="text-lg mb-6 m1200:mb-[78px] leading-[1.4] uppercase font-bold">
                     Разработка<br/>
                     уникальных<br/>
                     рецептур
@@ -109,18 +109,18 @@
         </div>
     </section>
 
-    <section class="my-[140px]">
+    <section class="my-20 m1200:my-[140px]">
         <h4 class="text-2xl m768:text-3xl uppercase mb-[40px]">Варианты сотрудничества</h4>
 
-        <div class="grid grid-cols-3 gap-2 5">
-            <div class="rounded-[80px] overflow-hidden bg-white relative z-10">
-                <img src="/src/assets/imgs/cooperation-vartiants/1.png" alt="" class="inset-0 absolute -z-10 object-cover" />
+        <div class="grid m640:grid-cols-2 m992:grid-cols-3 gap-2 5">
+            <div class="rounded-[30px] m1200:rounded-[80px] overflow-hidden bg-white relative z-10">
+                <img src="/src/assets/imgs/cooperation-vartiants/1.png" alt="" class="inset-0 absolute -z-10 object-cover size-full" />
 
-                <div class="p-10 pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
+                <div class="p-6 m1200:p-10 m1200:pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
                     <div>
-                        <h4 class="font-bold uppercase text-3xl leading-[1.2] mb-[43px]">
-                            Готовая линейка<br/>
-                            продукции<br/>
+                        <h4 class="font-bold uppercase text-2xl m1200:text-3xl leading-[1.2] mb-[43px]">
+                            Готовая линейка<br class="max-m1200:hidden" />
+                            продукции<br class="max-m1200:hidden" />
                             под ваш бренд
                         </h4>
 
@@ -141,14 +141,14 @@
                 </div>
             </div>
 
-            <div class="rounded-[80px] overflow-hidden bg-white relative z-10">
-                <img src="/src/assets/imgs/cooperation-vartiants/2.png" alt="" class="inset-0 absolute -z-10 object-cover" />
+            <div class="rounded-[30px] m1200:rounded-[80px] overflow-hidden bg-white relative z-10">
+                <img src="/src/assets/imgs/cooperation-vartiants/2.png" alt="" class="inset-0 absolute -z-10 object-cover size-full" />
 
-                <div class="p-10 pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
+                <div class="p-6 m1200:p-10 m1200:pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
                     <div>
-                        <h4 class="font-bold uppercase text-3xl leading-[1.2] mb-[43px]">
-                            Аналоги<br/>
-                            существующих<br/>
+                        <h4 class="font-bold uppercase text-2xl m1200:text-3xl leading-[1.2] mb-[43px]">
+                            Аналоги<br class="max-m1200:hidden" />
+                            существующих<br class="max-m1200:hidden" />
                             средств
                         </h4>
 
@@ -167,14 +167,14 @@
                 </div>
             </div>
 
-            <div class="rounded-[80px] overflow-hidden bg-white relative z-10">
-                <img src="/src/assets/imgs/cooperation-vartiants/3.png" alt="" class="inset-0 absolute -z-10 object-cover" />
+            <div class="rounded-[30px] m1200:rounded-[80px] overflow-hidden bg-white relative z-10 m640:max-m992:col-span-2">
+                <img src="/src/assets/imgs/cooperation-vartiants/3.png" alt="" class="inset-0 absolute -z-10 object-cover size-full" />
 
-                <div class="p-10 pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
+                <div class="p-6 m1200:p-10 m1200:pt-[118px] bg-main/60 hover:bg-main/90 text-white group transition-colors size-full flex flex-col justify-between">
                     <div>
-                        <h4 class="font-bold uppercase text-3xl leading-[1.2] mb-[43px]">
-                            Индивидуальная<br/>
-                            разработка<br/>
+                        <h4 class="font-bold uppercase text-2xl m1200:text-3xl leading-[1.2] mb-[43px]">
+                            Индивидуальная<br class="max-m1200:hidden" />
+                            разработка<br class="max-m1200:hidden" />
                             средств
                         </h4>
 
@@ -196,9 +196,9 @@
         </div>
     </section>
 
-    <section class="my-[140px] flex gap-[66px]">
+    <section class="my-20 m1200:my-[140px] flex max-m1280:flex-col-reverse gap-[66px]">
         <div>
-            <h4 class="mb-[33px] text-[44px] leading-[1.2] uppercase">
+            <h4 class="mb-[33px] text-3xl m640:text-[44px] leading-[1.2] uppercase">
                 Проанализируем конкурентов
                 и предложим вам лучшее решение
             </h4>
@@ -212,30 +212,30 @@
             </button>
         </div>
 
-        <div class="shrink-0 w-[746px] rounded-[60px] aspect-[746/422] relative">
+        <div class="shrink-0 w-full m992:w-[746px] rounded-[60px] aspect-[746/422] relative">
             <img src="/src/assets/imgs/cooperation-vartiants/4.png" alt="" class="size-full object-cover" />
 
-            <div class="absolute left-5 bottom-5 bg-white rounded-[50px] flex items-center pl-10 pr-[22px] gap-[15px] py-[24px]">
-                <p class="font-bold text-lg leading-[1.4] uppercase">
+            <div class="absolute left-3 m640:left-5 bottom-3 m640:bottom-5 bg-white rounded-3xl m640:rounded-[50px] flex items-center p-4 m640:pl-10 m640:pr-[22px] gap-[15px] m640:py-[24px]">
+                <p class="font-bold text-sm m640:text-lg leading-[1.4] uppercase">
                     Поможем<br/>
                     с сертификацией<br/>
                     продукции
                 </p>
 
-                <img src="/src/assets/imgs/icons/vote2.svg" class="size-[84px]" alt="" />
+                <img src="/src/assets/imgs/icons/vote2.svg" class="size-[60px] m640:size-[84px]" alt="" />
             </div>
         </div>
     </section>
 
-    <section class="my-[140px]">
+    <section class="my-20 m1200:my-[140px]">
         <h4 class="mb-[51px] text-[44px] leading-[1.2] uppercase">Этапы сотрудничества</h4>
 
-        <div class="rounded-[60px] bg-main">
-            <div class="bg-white rounded-[60px] pt-12 px-[50px] pb-[45px]">
+        <div class="rounded-[30px] m1024:rounded-[60px] bg-main">
+            <div class="bg-white rounded-[30px] m1024:rounded-[60px] p-5 m1024:pt-12 m1024:px-[50px] m1024:pb-[45px]">
                 <h4 class="text-2xl m768:text-3xl uppercase mb-[40px]">Разработка продукта</h4>
 
-                <div class="flex justify-between">
-                    <div class="w-[234px]">
+                <div class="flex max-m1024:flex-wrap justify-between gap-y-10">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">01</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Зарегистрировать<br/>
@@ -251,7 +251,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">02</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Выбрать нужные<br/>
@@ -267,7 +267,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">03</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Выбрать<br/>
@@ -282,7 +282,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">04</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Разработать<br/>
@@ -300,11 +300,11 @@
                 </div>
             </div>
 
-            <div class="text-white pt-12 px-[50px] pb-[45px]">
+            <div class="text-white p-5 m1024:pt-12 m1024:px-[50px] m1024:pb-[45px]">
                 <h4 class="text-2xl m768:text-3xl uppercase mb-[40px]">Производство продукта</h4>
 
-                <div class="flex justify-between">
-                    <div class="w-[234px]">
+                <div class="flex max-m1024:flex-wrap justify-between gap-y-10">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">01</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             производство<br/>
@@ -320,7 +320,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">02</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Напечатаем<br/>
@@ -336,7 +336,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">03</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             Наклеим этикетки<br/>
@@ -352,7 +352,7 @@
                         </p>
                     </div>
 
-                    <div class="w-[234px]">
+                    <div class="w-full m576:w-1/2 m1024:w-[234px]">
                         <h4 class="mb-[11px] text-accent text-[38px] leading-[1.2]">04</h4>
                         <p class="mb-4 font-bold uppercase leading-[1.4] text-lg">
                             доставляем<br/>
@@ -376,21 +376,21 @@
         {% include '../src/components/certificates-slider.njk' %}
     </div>
 
-    <section class="mb-[160px] relative">
-        <div class="absolute top-0 left-0">
+    <section class="mb-20 m1200:mb-[160px] relative">
+        <div class="m1200:absolute top-0 left-0">
             <h4 class="mb-[51px] text-[44px] leading-[1.2] uppercase">
-                Шифа cosmetics<br/>
-                — это натуральные<br/>
-                и безопасные<br/>
+                Шифа cosmetics<br class="max-m1200:hidden" />
+                — это натуральные<br class="max-m1200:hidden" />
+                и безопасные<br class="max-m1200:hidden" />
                 средства ухода
             </h4>
 
             <p class="mb-[52px] text-xl leading-[1.4]">
-                Продукты, которые<br/>
-                мы придумали сами спустя<br/>
-                годы погружения в мир<br/>
-                натуральных средств<br/>
-                для ухода за телом,<br/>
+                Продукты, которые<br class="max-m1200:hidden" />
+                мы придумали сами спустя<br class="max-m1200:hidden" />
+                годы погружения в мир<br class="max-m1200:hidden" />
+                натуральных средств<br class="max-m1200:hidden" />
+                для ухода за телом,<br class="max-m1200:hidden" />
                 кожей и экопродуктов.
             </p>
 
@@ -401,9 +401,9 @@
             </button>
         </div>
 
-        <div class="w-[897px] flex flex-wrap justify-end gap-[15px] justify-self-end">
-            <div class="w-[314px] py-[35px] px-10 bg-white relative rounded-[60px] overflow-hidden col-span-full m576:col-span-6 m1200:col-span-3">
-                <p class="text-lg leading-[1.4] font-bold mb-10 m576:mb-[78px] uppercase">
+        <div class="m1200:w-[897px] max-m1200:mt-10 flex flex-wrap justify-end gap-[15px] justify-self-end">
+            <div class="w-full m640:w-[calc(50%-7.5px)] m1200:w-[314px] p-4 m640:py-[35px] m640:px-10 bg-white relative rounded-[30px] m640:rounded-[60px] overflow-hidden col-span-full m576:col-span-6 m1200:col-span-3">
+                <p class="text-lg leading-[1.4] font-bold mb-10 m1200:mb-[78px] uppercase">
                     Чистые составы<br/>
                     и безупречные<br/>
                     формулы
@@ -419,8 +419,8 @@
                 <img src="/src/assets/imgs/about/1.svg" class="absolute inset-y-0 right-0" alt="">
             </div>
 
-            <div class="w-[314px] py-[35px] text-white px-10 bg-accent relative rounded-[60px] overflow-hidden col-span-full m576:col-span-6 m1200:col-span-3">
-                <p class="text-lg leading-[1.4] font-bold mb-10 m576:mb-[78px] uppercase">
+            <div class="w-full m640:w-[calc(50%-7.5px)] m1200:w-[314px] p-4 m640:py-[35px] text-white m640:px-10 bg-accent relative rounded-[30px] m640:rounded-[60px] overflow-hidden col-span-full m576:col-span-6 m1200:col-span-3">
+                <p class="text-lg leading-[1.4] font-bold mb-10 m1200:mb-[78px] uppercase">
                     Более 12 лет<br/>
                     экспертного<br/>
                     опыта
@@ -436,8 +436,8 @@
                 <img src="/src/assets/imgs/about/2.svg" class="absolute inset-y-0 right-0" alt="">
             </div>
 
-            <div class="w-[568px] py-[35px] px-10 bg-main text-white relative rounded-[60px] overflow-hidden col-span-full m1200:col-span-6">
-                <p class="text-lg leading-[1.4] font-bold mb-10 m576:mb-[78px] uppercase">
+            <div class="w-full m1200:w-[568px] m640:py-[35px] p-4 m640:px-10 bg-main text-white relative rounded-[30px] m640:rounded-[60px] overflow-hidden col-span-full m1200:col-span-6">
+                <p class="text-lg leading-[1.4] font-bold mb-10 m1200:mb-[78px] uppercase">
                     Строгий<br/>
                     отбор всех<br/>
                     ингредиентов
@@ -453,8 +453,8 @@
                 <img src="/src/assets/imgs/about/hands.webp" class="max-m576:hidden absolute inset-y-0 h-full -right-[40px]" alt="">
             </div>
 
-            <div class="w-[314px] relative py-[35px] px-[40px] rounded-[60px] bg-white">
-                <h4 class="text-lg mb-[78px] leading-[1.4] uppercase font-bold">
+            <div class="w-full m1200:w-[314px] relative m640:py-[35px] p-4 m640:px-10 rounded-[30px] m640:rounded-[60px] bg-white">
+                <h4 class="text-lg mb-10 m1200:mb-[78px] leading-[1.4] uppercase font-bold">
                     только<br/>
                     Оригинальна<br/>
                     продукция
@@ -472,15 +472,15 @@
         </div>
     </section>
 
-    <section class="mb-[80px] grid grid-cols-2 gap-2.5">
-        <div class="rounded-[80px] flex flex-col align-center items-center bg-white p-10 pt-[55px]">
-            <h4 class="uppercase text-3xl leading-[1.2] mb-[29px]">
-                Оставьте заявку<br/>
+    <section class="mb-[80px] grid m992:grid-cols-2 gap-2.5">
+        <div class="rounded-[30px] m1024:rounded-[80px] flex flex-col align-center items-center bg-white p-4 m1024:p-10 m1024:pt-[55px]">
+            <h4 class="uppercase text-2xl m576:text-3xl leading-[1.2] mb-[29px]">
+                Оставьте заявку<br class="max-m576:hidden"/>
                 на сотрудничество
             </h4>
 
             <form class="w-full flex flex-col items-center">
-                <div class="grid grid-cols-2 gap-2.5 w-full">
+                <div class="grid m576:grid-cols-2 gap-2.5 w-full">
                     <div class="relative rounded-2xl border border-border h-[68px] overflow-hidden">
                         <span class="absolute top-3 inset-x-[15px] text-sm leading-[1.2]">Ваше имя</span>
 
@@ -524,7 +524,7 @@
             </button>
         </div>
 
-        <img src="/src/assets/imgs/callback-img.png" alt="" class="object-cover rounded-[80px]" />
+        <img src="/src/assets/imgs/callback-img.png" alt="" class="object-cover rounded-[30px] max-m992:hidden m1024:rounded-[80px] h-full" />
     </section>
 </div>
 
