@@ -408,7 +408,9 @@ __metadata:
   dependencies:
     "@vituum/vite-plugin-nunjucks": "npm:1.1.0"
     "@vituum/vite-plugin-tailwindcss": "npm:1.2.0"
+    fslightbox: "npm:3.6.1"
     keen-slider: "npm:6.8.6"
+    swiper: "npm:11.2.8"
     vite: "npm:6.2.0"
     vituum: "npm:1.1.1"
   languageName: unknown
@@ -1287,6 +1289,13 @@ __metadata:
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fslightbox@npm:3.6.1":
+  version: 3.6.1
+  resolution: "fslightbox@npm:3.6.1"
+  checksum: 10/43b272d8fd7d38ca745cf3b39bf7f0fc5c3738546312e12e63e6fe09a5a6d5eb4d51ad23a98fd6e5714f9b175fb98af74f9d107393a62cab1265ce0011a6aa1f
   languageName: node
   linkType: hard
 
@@ -2309,6 +2318,13 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 10/a9dc19ae2220c952bd2231d08ddeecb1b0328b61e72071ff4000c8384e145cc07c1c0bdb3b5a1cb06e186a7b2790f1dee793418b332f6ddf320de25d9125be7e
+  languageName: node
+  linkType: hard
+
+"swiper@npm:11.2.8":
+  version: 11.2.8
+  resolution: "swiper@npm:11.2.8"
+  checksum: 10/28a3c7273c656017d46b4b987cbec36b574cf439a98cac8d2c8a9baeab6e3a8ed1ea627cdc1144d1856713589f8cfc6f9b291c7c06351aa2d0201370f1a68239
   languageName: node
   linkType: hard
 

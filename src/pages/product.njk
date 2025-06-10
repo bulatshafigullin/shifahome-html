@@ -5,14 +5,34 @@
 <div class="container">
     {% include '../src/components/breadcrumbs.njk' %}
 
-    <section class="grid grid-cols-1 m576:grid-cols-2 m1024:grid-cols-[1fr_1fr_314px] gap-5 m1024:gap-[56px] justify-between">
-        <div class="m576:h-auto max-m576:aspect-square w-full m1280:h-[670px] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden"></div>
+    <section class="grid grid-cols-1 m1024:grid-cols-[1fr_314px] gap-5 m1024:gap-[56px] justify-between">
+        <div id="product-slider" class="swiper w-full !pb-8">
+            <div class="swiper-wrapper">
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+                <a data-fslightbox href="/src/assets/imgs/product/1.png" class="swiper-slide aspect-square m992:aspect-[430/669] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden p-10">
+                    <img src="/src/assets/imgs/product/1.png" alt="" class="object-contain size-full" />
+                </a>
+            </div>
 
-        <div class="m576:h-auto max-m576:aspect-square w-full m1280:h-[670px] bg-white rounded-[40px] m768:rounded-[60px] overflow-hidden flex-center">
-            <img src="/src/assets/imgs/product/1.png" alt="" class="object-cover size-[100%]" />
+            <div class="swiper-pagination mt-4 flex-center gap-4 h-2.5"></div>
         </div>
 
-        <div class="m576:max-m1024:col-span-2">
+
+        <div>
             <span class="bg-accent text-white lowercase text-xs rounded-full px-1.5">новинка</span>
 
             <h1 class="mt-5 mb-2.5 font-bold text-[22px] leading-[26px] uppercase">

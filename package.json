@@ -15,7 +15,9 @@
     "vituum": "1.1.1"
   },
   "dependencies": {
+    "fslightbox": "3.6.1",
     "keen-slider": "6.8.6",
+    "swiper": "11.2.8",
     "vite": "6.2.0"
   },
   "packageManager": "yarn@4.6.0"

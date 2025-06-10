@@ -1,4 +1,7 @@
 import KeenSlider from 'keen-slider'
+import "fslightbox"
+import Swiper from "swiper";
+import { Pagination } from 'swiper/modules';
 
 function mainSliderNavigation(slider) {
     let wrapper, dots, arrowLeft, arrowRight;
@@ -64,12 +67,7 @@ function mainSliderNavigation(slider) {
 
     function updateClasses() {
         let slide = slider.track.details.rel;
-        slide === 0
-            ? arrowLeft.classList.add("arrow--disabled")
-            : arrowLeft.classList.remove("arrow--disabled");
-        slide === slider.track.details.slides.length - 1
-            ? arrowRight.classList.add("arrow--disabled")
-            : arrowRight.classList.remove("arrow--disabled");
+
         Array.from(dots.children).forEach(function (dot: HTMLElement, idx: number) {
             idx === slide
                 ? dot.classList.add("dot--active")
@@ -291,4 +289,23 @@ document.querySelectorAll('.prod-count button').forEach(el => {
 
         input.setAttribute('value', String(newValue))
     })
+})
+
+new Swiper("#product-slider", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+        },
+        1280: {
+            spaceBetween: 56,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    modules: [Pagination]
 })
