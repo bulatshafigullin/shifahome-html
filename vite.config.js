@@ -12,9 +12,6 @@ export default {
                     assetFileNames: (assetInfo) => {
                         console.log('assetInfo', assetInfo)
                         if (assetInfo.originalFileName) {
-                            if (assetInfo.originalFileName.endsWith(".ts")) {
-                                console.log(assetInfo)
-                            }
                             let path = assetInfo.originalFileName.replace("src/assets/", "static/cos/").replace("src/styles", "static/cos/styles").replace(assetInfo.name, "[name]-[hash].[ext]");
                             return path
                         }
